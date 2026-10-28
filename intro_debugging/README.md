@@ -3,4 +3,6 @@ Ce README sera pour décrire le projet "Debugging Visualization with Python Tuto
 
 **/ Premier code : Le programme renvoi la valeur de n (qui reste toujours 10) au lieu de renvoyer la valeur de sum (qui est la variable qui accumule les résultats) pour nous donner la somme de tous chiffres additioné (i). La boucle se stop a i < n, donc à 9, alors que l'on dois inclure n (10) donc la boucle doit se stop a i <= n.
 
-**/ Deuxieme code : 
+**/ Deuxieme code : Le programme rajoute +1 en trop à col après printf de row * col, vu que dans la boucle col prend déja +1, celui après printf est en trop et fausse tout. Il suffit donc de le retirer.
+
+**/ Troisieme code : 
