@@ -1,0 +1,1 @@
+Ce README expliquera etape par etape en quoi consiste les projets "C - Hello, World", "C - Variables, if, else, while", "C - Functions, nested loops", "C - More functions, more nested loops" et ce qu'il valide par rapport aux Learning Objectives.
