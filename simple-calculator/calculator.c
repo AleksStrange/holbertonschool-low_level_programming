@@ -4,43 +4,63 @@
  * add - Addition de a et b.
  * Return: résultat de a + b.
  */
-int add(void)
+float add(void)
 {
-	int a, b;
+	float a, b;
 
 	printf("a: ");
-	scanf("%d", &a);
+	scanf("%f", &a);
 	printf("b: ");
-	scanf("%d", &b);
+	scanf("%f", &b);
 	return (a + b);
 }
 /**
  * sub - Soustraction de a et b.
  * Return: résultat de a - b.
  */
-int sub(void)
+float sub(void)
 {
-	int a, b;
+	float a, b;
 
 	printf("a: ");
-	scanf("%d", &a);
+	scanf("%f", &a);
 	printf("b: ");
-	scanf("%d", &b);
+	scanf("%f", &b);
 	return (a - b);
 }
 /**
  * multi - Multiplication de a et b.
  * Return: résultat de a * b.
  */
-int multi(void)
+float multi(void)
 {
-	int a, b;
+	float a, b;
 
 	printf("a: ");
-	scanf("%d", &a);
+	scanf("%f", &a);
 	printf("b: ");
-	scanf("%d", &b);
+	scanf("%f", &b);
 	return (a * b);
+}
+/**
+ * divide - Division de a et b (sauf division par zéro).
+ * Return: résultat de a / b.
+ */
+float divide(void)
+{
+	float a, b;
+
+	printf("a: ");
+	scanf("%f", &a);
+	printf("b: ");
+	scanf("%f", &b);
+	if (b == 0)
+	{
+		printf("Error: division by zero\n");
+		return (0);
+	}
+	printf("Result: %.2f\n", a / b);
+	return (0);
 }
 /**
  * main - Fonction principale.
@@ -66,15 +86,19 @@ int main(void)
 		}
 		else if (c == 1)
 		{
-			printf("Result: %d\n", add());
+			printf("Result: %.2f\n", add());
 		}
 		else if (c == 2)
 		{
-			printf("Result: %d\n", sub());
+			printf("Result: %.2f\n", sub());
 		}
 		else if (c == 3)
 		{
-			printf("Result: %d\n", multi());
+			printf("Result: %.2f\n", multi());
+		}
+		else if (c == 4)
+		{
+			divide();
 		}
 		else if (c < 0 || c > 4)
 		{
