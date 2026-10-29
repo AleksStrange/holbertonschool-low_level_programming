@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int c;
+	int c, a, b;
 
 	do {
 		printf("Bienvenue dans le Calculator 3000 mon ami(e) !\n");
@@ -23,6 +23,14 @@ int main(void)
 		if (c == 0)
 		{
 			printf("Bye!\n");
+		}
+		else if (c == 1)
+		{
+			printf("a: ");
+			scanf("%d", &a);
+			printf("b: ");
+			scanf("%d", &b);
+			printf("Result: %d\n", a + b);
 		}
 		else if (c < 0 || c > 4)
 		{
