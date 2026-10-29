@@ -3,8 +3,6 @@
 /**
  * print_line - Trace une ligne droite dans le terminal.
  * @n: Nombre de fois ou le caractère '_' est affiché.
- *
- * Return:
  */
 void print_line(int n)
 {
