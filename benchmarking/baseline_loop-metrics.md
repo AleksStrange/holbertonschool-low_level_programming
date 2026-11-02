@@ -1,6 +1,13 @@
+# Baseline Loop Metrics
+
+## Exécution 1
 Iterations: 100000000
-Execution time: 0.529668 seconds
+Execution time: 0.331023 seconds
+
+## Exécution 2
 Iterations: 100000000
-Execution time: 0.370001 seconds
+Execution time: 0.343194 seconds
+
+## Exécution 3
 Iterations: 100000000
-Execution time: 0.341106 seconds
+Execution time: 0.342210 seconds
