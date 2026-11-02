@@ -1,66 +1,89 @@
 #include <stdio.h>
 
 /**
- * add - Addition de a et b.
- * Return: résultat de a + b.
+ * get_user_choice - Affiche le menu et gère la saisie sécurisée.
+ * Return: Le choix validé de l'utilisateur.
  */
-float add(void)
+int get_user_choice(void)
 {
-	float a, b;
+	int c;
 
-	printf("a: ");
-	scanf("%f", &a);
-	printf("b: ");
-	scanf("%f", &b);
-	return (a + b);
-}
-/**
- * sub - Soustraction de a et b.
- * Return: résultat de a - b.
- */
-float sub(void)
-{
-	float a, b;
-
-	printf("a: ");
-	scanf("%f", &a);
-	printf("b: ");
-	scanf("%f", &b);
-	return (a - b);
-}
-/**
- * multi - Multiplication de a et b.
- * Return: résultat de a * b.
- */
-float multi(void)
-{
-	float a, b;
-
-	printf("a: ");
-	scanf("%f", &a);
-	printf("b: ");
-	scanf("%f", &b);
-	return (a * b);
-}
-/**
- * divide - Division de a et b (sauf division par zéro).
- * Return: résultat de a / b.
- */
-float divide(void)
-{
-	float a, b;
-
-	printf("a: ");
-	scanf("%f", &a);
-	printf("b: ");
-	scanf("%f", &b);
-	if (b == 0)
+	printf("Bienvenue dans le Calculator 3000 mon ami(e) !\n");
+	printf("\n1) Add\n");
+	printf("2) Subtract\n");
+	printf("3) Multiply\n");
+	printf("4) Divide\n");
+	printf("0) Quit\n");
+	while (1)
 	{
-		printf("Error: division by zero\n");
-		return (0);
+		printf("\nChoice: ");
+		if (scanf("%d", &c) != 1)
+		{
+			printf("Invalid choice\n");
+			while (getchar() != '\n')
+			{
+			}
+		}
+		else
+		{
+			while (getchar() != '\n')
+			{
+			}
+			return (c);
+		}
 	}
-	printf("Result: %.2f\n", a / b);
+}
+/**
+ * add_sub - Addition et soustraction de a et b.
+ * @c: Choix de l'utilisateur (1 pour add et 2 pour sub).
+ * Return: résultat de a + b ou a - b.
+ */
+float add_sub(int c)
+{
+	float a, b;
+
+	printf("a: ");
+	scanf("%f", &a);
+	printf("b: ");
+	scanf("%f", &b);
+
+	if (c == 1)
+	{
+		return (a + b);
+	}
+	else if (c == 2)
+	{
+		return (a - b);
+	}
 	return (0);
+}
+/**
+ * mul_div - Multiplication et division de a et b.
+ * @c: Choix de l'utilisateur (1 pour mult et 2 pour div).
+ * Return: résultat de a * b ou a / b.
+ */
+void mul_div(int c)
+{
+	float a, b;
+
+	printf("a: ");
+	scanf("%f", &a);
+	printf("b: ");
+	scanf("%f", &b);
+
+	if (c == 3)
+	{
+		printf("Result: %.2f\n", a * b);
+	}
+	else if (c == 4)
+	{
+		if (b == 0)
+		{
+			printf("Error: division by zero\n");
+			return;
+		}
+		printf("Result: %.2f\n", a / b);
+	}
 }
 /**
  * main - Fonction principale.
@@ -71,36 +94,21 @@ int main(void)
 	int c;
 
 	do {
-		printf("Bienvenue dans le Calculator 3000 mon ami(e) !\n");
-		printf("\n1) Add\n");
-		printf("2) Subtract\n");
-		printf("3) Multiply\n");
-		printf("4) Divide\n");
-		printf("0) Quit\n");
-		printf("\nChoice:");
-		scanf("%d", &c);
+		c = get_user_choice();
 
 		if (c == 0)
 		{
 			printf("Bye!\n");
 		}
-		else if (c == 1)
+		else if (c == 1 || c == 2)
 		{
-			printf("Result: %.2f\n", add());
+			printf("Result: %.2f\n", add_sub(c));
 		}
-		else if (c == 2)
+		else if (c == 3 || c == 4)
 		{
-			printf("Result: %.2f\n", sub());
+			mul_div(c);
 		}
-		else if (c == 3)
-		{
-			printf("Result: %.2f\n", multi());
-		}
-		else if (c == 4)
-		{
-			divide();
-		}
-		else if (c < 0 || c > 4)
+		else
 		{
 			printf("Invalid choice\n");
 		}
