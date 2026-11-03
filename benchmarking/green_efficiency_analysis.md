@@ -9,40 +9,40 @@ Cette approche permet d'isoler précisément le comportement de chaque bloc de c
 Les résultats obtenus sont les suivants :
 ## Task 3 :
 
-OTAL seconds : 0,000289
-BUILD_DATA seconds : 0,000117
-PROCESS seconds : 0,000125
-REDUCE seconds : 0,000046
+TOTAL seconds : 0,000289 |
+BUILD_DATA seconds : 0,000117 |
+PROCESS seconds : 0,000125 |
+REDUCE seconds : 0,000046 |
 ## Task 2 :
 
 ### Exécution 1
-Naive algorithm result: 625025000
-Naive algorithm time: 1.159450 seconds
-Single-pass algorithm result: 25000
-Single-pass algorithm time: 0.000043 seconds
+Naive algorithm result: 625025000 |
+Naive algorithm time: 1.159450 seconds |
+Single-pass algorithm result: 25000 |
+Single-pass algorithm time: 0.000043 seconds |
 ### Exécution 2
-Naive algorithm result: 625025000
-Naive algorithm time: 1.165999 seconds
-Single-pass algorithm result: 25000
-Single-pass algorithm time: 0.000043 seconds
+Naive algorithm result: 625025000 |
+Naive algorithm time: 1.165999 seconds |
+Single-pass algorithm result: 25000 |
+Single-pass algorithm time: 0.000043 seconds |
 ### Exécution 3
-Naive algorithm result: 625025000
-Naive algorithm time: 1.125708 seconds
-Single-pass algorithm result: 25000
-Single-pass algorithm time: 0.000045 seconds
+Naive algorithm result: 625025000 |
+Naive algorithm time: 1.125708 seconds |
+Single-pass algorithm result: 25000 |
+Single-pass algorithm time: 0.000045 seconds |
 
-Naive algorithm temps moyen : 1,150385 seconds
+Naive algorithm temps moyen : 1,150385 seconds |
 Single-pass algorithm temps moyen : 0,000044 seconds
 ## Task 1
 
 ### Exécution 1
-Iterations: 100000000
+Iterations: 100000000 |
 Execution time: 0.331023 seconds
 ### Exécution 2
-Iterations: 100000000
+Iterations: 100000000 |
 Execution time: 0.343194 seconds
 ### Exécution 3
-Iterations: 100000000
+Iterations: 100000000 |
 Execution time: 0.342210 seconds
 
 
