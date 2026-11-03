@@ -1,4 +1,4 @@
-# Pointers, Arrays, and Strings
+# Pointers, Arrays, and Strings (Rangé dans le dossier "Projet_1_pointeurs").
 
 Ce projet regroupe une série d'exercices en langage C axés sur la manipulation avancée des pointeurs, des tableaux et des chaînes de caractères, développés dans le cadre du cursus Holberton School.
 
