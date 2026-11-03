@@ -46,9 +46,12 @@ Iterations: 100000000 |
 Execution time: 0.342210 seconds
 
 
-Task 3 : On remarque que c'est la phase "process_dataset" (0;000125), suivi de près par "build_dataset" (0,000117) qui mobilisent la majorité du temps, alors que "reduce_checksum" (0,000046) est en réalité extrêmement rapide. "TOTAL" avec ses (0,000289) représente quand à lui l'addition du temps de toutes les phases du programme.
-Task 2 : L'implémentation Single-pass algorithm est environ 25 667 fois plus rapide que le Naive algorithm.
-Task 1 : Chaque exécution a été testée avec 100 000 000 itérations, les différants essaie montrent des performances stable, avec une moyenne d'exécution d'environ 0,338 s.
+# Task 3 
+On remarque que c'est la phase "process_dataset" (0;000125), suivi de près par "build_dataset" (0,000117) qui mobilisent la majorité du temps, alors que "reduce_checksum" (0,000046) est en réalité extrêmement rapide. "TOTAL" avec ses (0,000289) représente quand à lui l'addition du temps de toutes les phases du programme.
+# Task 2
+L'implémentation Single-pass algorithm est environ 25 667 fois plus rapide que le Naive algorithm.
+# Task 1
+Chaque exécution a été testée avec 100 000 000 itérations, les différants essaie montrent des performances stable, avec une moyenne d'exécution d'environ 0,338 s.
 # Relation Between Runtime and Energy Consumption
 Plus un programme met du temps à s'exécuter, plus il maintient le processeur à un niveau d'activité élevé, ce qui du coup augmente la consommation d'énergie global de la machine.
 On peut donc en déduire qu'optimiser les phases "process_dataset" et "build_dataset" permetterait de reduire considerablement la consommation de la machine puisque qu'elle ne serait pas sollicité aussi longtemps.
