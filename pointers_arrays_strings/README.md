@@ -43,6 +43,24 @@ Ce deuxième projet approfondit la manipulation avancée des chaînes et le reco
 
 ---
 
+## 📂 Projet 3 : Manipulation d'octets et matrices (Dossier "Projet_3_pointeurs")
+
+Ce troisième projet poursuit l'exploration de la manipulation de la mémoire, des pointeurs et des tableaux en C, avec un focus sur la gestion des tableaux à deux dimensions et des représentations mémoires linéaires.
+
+| Fichier | Description |
+| :--- | :--- |
+| `0-memset.c` | Remplit les $n$ premiers octets de la zone mémoire pointée par `s` avec l'octet constant `b`. |
+| `1-memcpy.c` | Copie $n$ octets de la zone mémoire `src` vers la zone mémoire `dest`. |
+| `2-strchr.c` | Localise la première occurrence d'un caractère dans une chaîne de caractères. |
+| `3-strspn.c` | Calcule la longueur du segment initial d'une chaîne constitué uniquement d'octets de sous-chaîne. |
+| `4-strpbrk.c` | Recherche dans une chaîne la première occurrence de l'un des octets d'un ensemble donné. |
+| `5-strstr.c` | Localise la première occurrence d'une sous-chaîne complète dans une chaîne principale. |
+| `7-print_chessboard.c` | Affiche un échiquier complet (tableau 2D de 8x8 caractères). |
+| `8-print_diagsums.c` | Calcule et affiche la somme des deux diagonales d'une matrice carrée d'entiers. |
+| `_putchar.c` | Écrit un caractère sur la sortie standard (`stdout`). |
+| `main.h` | Fichier d'en-tête contenant tous les prototypes des fonctions du projet. |
+
+
 ## Compilation et Normes
 
 * **Norme de code :** Respect strict du style Betty.
