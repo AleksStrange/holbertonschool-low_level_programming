@@ -4,8 +4,8 @@
 /**
  * **alloc_grid - Renvoie un pointeur vers un tableau d'entiers à
  * deux dimensions.
- * @width: Nombres de lignes du tableau.
- * @height: Nombre de colonne du tableau.
+ * @width: Nombres de colonnes du tableau.
+ * @height: Nombre de lignes du tableau.
  *
  * Return: Pointeur vers l'adresse du début du tableau.
  */
