@@ -4,8 +4,6 @@ Ce projet aborde des concepts avancés d'allocation dynamique de mémoire en C e
 
 ## Fichiers et Prototypes
 
-| Fichier | Description | Prototype |
-| :--- | :--- | :--- |
 | `0-malloc_checked.c` | Alloue de la mémoire à l'aide de `malloc`. Quitte avec le statut `98` en cas d'échec. | `void *malloc_checked(unsigned int b);` |
 
 | `1-string_nconcat.c` | Concatène deux chaînes de caractères en ne prenant que les `n` premiers octets de la seconde chaîne. | `char *string_nconcat(char *s1, char *s2, unsigned int n);` |
