@@ -7,7 +7,7 @@
  *
  * Return: Pointeur vers l'adresse de la copie, ou NULL.
  */
-char *_strdup(char *str)
+static char *_strdup(char *str)
 {
 	int i;
 	int len = 0;
