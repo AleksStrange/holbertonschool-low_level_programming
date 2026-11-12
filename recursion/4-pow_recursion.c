@@ -5,7 +5,7 @@
  * @x: Valeur à élevée.
  * @y: Valeur a laquelle on va élevé x.
  *
- * Return:
+ * Return: Le résultat de x puissance y, ou (-1) si négatif.
  */
 int _pow_recursion(int x, int y)
 {
