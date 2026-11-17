@@ -6,7 +6,7 @@
  * @argv: Tableau de chaines de caracteres contenant
  * les arguments de la ligne de commande.
  *
- * Return: Toujours 0.
+ * Return: 0 (Success).
  */
 int main(int argc, char *argv[])
 {
